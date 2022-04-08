@@ -1,9 +1,20 @@
 import React from 'react';
+import './MovieCard.scss'
 
-const MovieCard = () => {
+const MovieCard = ({data}) => {
     return (
-        <div>
-            MovieCard
+        <div className='card-item'>
+            <div className="card-inner">
+                <div className="card-top">
+                    <img src={data.Poster} alt={data.Title} />
+                </div>
+                <div className="card-buttom">
+                    <div className="card-info">
+                        <h4>{data.Title}</h4>
+                        <p> {data.year} </p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
