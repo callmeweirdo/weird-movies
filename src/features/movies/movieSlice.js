@@ -47,7 +47,7 @@ const movieSlice = createSlice({
   initialState,
   reducers: {
     removeSelectedMovieOrShow: (state) => {
-      state.selectMovieOrShow = {}
+      state.selectMovieOrShow = {state}
     }
   },
   extraReducers: {
