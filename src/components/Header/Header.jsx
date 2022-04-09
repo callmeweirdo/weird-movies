@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo">
-        <Link to="/"> Weird Movies </Link>
+        <Link to="/"> Weirdo Movies Only </Link>
       </div>
 
       <div className="search-bar">
