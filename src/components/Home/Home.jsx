@@ -11,9 +11,12 @@ const Home = () => {
 
   const dispatch = useDispatch();
 
+  const movieConst = "alien";
+  const showConst = "weird";
+
 useEffect(() => {
-    dispatch(fetchAsyncMovies());
-    dispatch(fetchAsyncShows());
+    dispatch(fetchAsyncMovies(movieConst));
+    dispatch(fetchAsyncShows(showConst));
 },[dispatch]);
 
   return (
